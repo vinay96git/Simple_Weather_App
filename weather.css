@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 3% auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.search button img {
+    width: 18px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+/* Desktop */
+@media (max-width: 1024px) {
+    .weather-icon {
+        width: 150px;
+    }
+    .weather h1 {
+        font-size: 55px;
+    }
+    .weather h2 {
+        font-size: 40px;
+    }
+}
+
+/* Ipad Mini */
+@media (max-width: 768px) {
+    .weather-icon {
+        width: 100px;
+    }
+    .weather h1 {
+        font-size: 55px;
+    }
+    .weather h2 {
+        font-size: 40px;
+    }
+}
+
+/* Iphone SE */
+@media (max-width: 376px) {
+    .card {
+        width: 90%;
+    }
+    .search {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .search input {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .weather-icon {
+        width: 100px;
+    }
+    .weather h1 {
+        font-size: 50px;
+    }
+    .weather h2 {
+        font-size: 35px;
+    }
+    .details {
+        width: 100%;
+        padding: 0; 
+    }
+    .humidity, .wind {
+        font-size: 15px;
+        margin-top: -2px;
+    }
+}
